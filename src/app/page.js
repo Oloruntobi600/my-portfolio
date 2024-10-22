@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -16,6 +17,15 @@ export default function Home() {
           </ul>
         </nav>
       </header>
+
+      <div className="mt-4">
+        <Image 
+          src="/images/portfolio-picture.jpg" // Reference to the image inside the public/images folder
+          alt="Oloruntobi Ajayi" 
+          width={200} 
+          height={200} 
+        />
+      </div>
       
       {/* Main Content */}
       <main className="p-6">
